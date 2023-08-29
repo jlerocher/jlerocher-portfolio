@@ -7,9 +7,11 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy" "aws s3 cp dist/ s3://jlerocher-portfolio --recursive"
   },
   "dependencies": {
-    "astro": "^2.10.14"
+    "astro": "^2.10.14",
+    "astro-emoji": "^1.2.0"
   }
 }

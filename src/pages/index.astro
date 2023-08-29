@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-
+import emoji from 'astro-emoji';
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
 
@@ -30,25 +30,25 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Hello, my name is Jean Le Rocher"
+					tagline="I am a Creative FullStack Web & Cloud Developer who is currently based in Brazzaville, Congo. I'm open to remote jobs."
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="code" size="1.33em" />FullStack Web & Cloud Developer</Pill>
+						<Pill><Icon icon="microphone-stage" size="1.33em" /> English to french Translator</Pill>
+						<Pill><Icon icon="pencil-line" size="1.33em" /> Blog Writer</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Jean Le Rocher picture"
 					width="480"
 					height="620"
 					src="/assets/portrait.jpg"
 				/>
 			</header>
-
+			
 			<Skills />
 		</div>
 
@@ -81,17 +81,16 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>Skills</h3>
 					<p>
-						I have been fortunate enough to recieve praise for my work in several publications. Take
-						a look below to learn more.
+						This is technologies what I am using usually for my work. I can do amazing things with this 😎
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
+							['ReactJS', 'AstroJS', 'NodeJS', 'Tailwind CSS', 'FastAPI', 'Django', 'AWS Services', 'Docker'].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
@@ -239,6 +238,9 @@ const projects = (await getCollection('work'))
 		color: var(--gray-300);
 		background: var(--gradient-subtle);
 		box-shadow: var(--shadow-sm);
+		color: #7611A6;
+		font-size: larger;
+		font-weight: bolder;
 	}
 
 	@media (min-width: 50em) {
