@@ -7,8 +7,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "deploy": "aws s3 sync dist/ s3://jlerocher-portfolio"
+    "astro": "astro"
   },
   "dependencies": {
     "astro": "^2.10.14",
