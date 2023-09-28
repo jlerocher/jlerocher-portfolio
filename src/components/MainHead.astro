@@ -7,14 +7,17 @@ interface Props {
 }
 
 const {
-	title = 'Jean Le Rocher: Personal Site',
-	description = 'The personal site of Jean Le Rocher | My developer portfolio',
+	title = 'Jean Le Rocher | Portfolio',
+	description = 'The personal website of Jean Le Rocher | My developer portfolio',
 } = Astro.props;
 ---
 
 <meta charset="UTF-8" />
 <meta name="description" property="og:description" content={description} />
 <meta name="viewport" content="width=device-width" />
+<meta name="author" content="Jean Le Rocher" />
+<meta name="keywords" content="jlerocher, Jean Le Rocher, Web Developer, Cloud Developer">
+<link rel="me" href="https://twitter.com/jlerocher2023">
 <meta name="generator" content={Astro.generator} />
 <title>{title}</title>
 
