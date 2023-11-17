@@ -1,6 +1,5 @@
 ---
 import { getCollection } from 'astro:content';
-import emoji from 'astro-emoji';
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
 
@@ -42,10 +41,10 @@ const projects = (await getCollection('work'))
 				</Hero>
 
 				<img
-					alt="Jean Le Rocher picture"
+					alt="Jean Le Rocher with PC"
 					width="480"
 					height="620"
-					src="/assets/portrait.jpg"
+					src="/assets/portrait.png"
 				/>
 			</header>
 			
