@@ -24,7 +24,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  BUILD_PATH: "."
+  BUILD_PATH: "dist"
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   AWS_DEFAULT_REGION: eu-west-3  # replace with your AWS region
