@@ -71,4 +71,4 @@ jobs:
       
       - name: Push build files to S3
         run: |
-          aws s3 cp build s3://jlerocher.pro --recursive
+          aws s3 cp build s3://jlerocher.pro --recursive --debug
