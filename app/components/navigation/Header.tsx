@@ -12,7 +12,7 @@ import Link from "next/link";
 import { ModeToggle } from "../other/ModeToggle";
 import ThemeSwitcher from "../other/ThemeSwitcher";
 
-const navItems: navItemType[] = [
+export const navItems: navItemType[] = [
     {
         name: "Projets",
         href: "/projects",

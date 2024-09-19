@@ -2,6 +2,7 @@ import { ThemeProvider } from "@/lib/providers/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Footer from "./components/navigation/Footer";
 import Header from "./components/navigation/Header";
 import "./globals.css";
 
@@ -42,6 +43,7 @@ export default function RootLayout({
                 >
                     <Header />
                     <main className="max-w-screen-lg mx-auto">{children}</main>
+                    <Footer />
                 </ThemeProvider>
                 <Analytics />
             </body>
