@@ -7,7 +7,7 @@ const ThemeSwitcher = () => {
 
     return (
         <>
-            <label className="relative inline-flex cursor-pointer select-none items-center">
+            <label className="relative inline-flex cursor-pointer select-none items-center w-full justify-evenly">
                 <input
                     aria-label="Toggle theme"
                     type="checkbox"
@@ -21,12 +21,12 @@ const ThemeSwitcher = () => {
                     <SunIcon className="size-6" />
                 </span>
                 <span
-                    className={`slider mx-4 flex h-8 w-[60px] items-center rounded-full p-1 duration-200 ${
+                    className={`slider mx-4 flex h-6 w-[60px] items-center rounded-full p-1 duration-200 ${
                         theme === "dark" ? "bg-[#212b36]" : "bg-[#CCCCCE]"
                     }`}
                 >
                     <span
-                        className={`dot h-6 w-6 rounded-full bg-white duration-200 ${
+                        className={`dot h-6 w-6 rounded-full bg-primary duration-500 ${
                             theme === "dark" ? "translate-x-[28px]" : ""
                         }`}
                     ></span>

@@ -30,9 +30,9 @@ const Header = () => {
             <div className="flex items-center gap-6 justify-center">
                 <Link href="/" className="flex font-medium items-center">
                     <span className="text-4xl">👋</span>
-                    <span className="ml-3 text-xl font-bold hidden md:inline md:w-64">
+                    <h2 className="ml-3 text-xl font-bold hidden md:inline md:w-64">
                         Jean Le Rocher | Portfolio
-                    </span>
+                    </h2>
                 </Link>
 
                 <nav className="hidden sm:flex sm:items-center gap-6 w-full sm:justify-center font-thin text-base">
