@@ -20,7 +20,7 @@ const navItems: navItemType[] = [
     },
     {
         name: "Blog",
-        href: "/blog",
+        href: "https://blog-de-rocher.vercel.app/",
         icon: <ReaderIcon className="size-5 text-base font-bold" />,
     },
 ];
