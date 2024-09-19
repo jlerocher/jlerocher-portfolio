@@ -1,4 +1,5 @@
 import { ThemeProvider } from "@/lib/providers/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Header from "./components/navigation/Header";
@@ -17,7 +18,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
     title: "Jean Le Rocher",
-    description: "Portfolio et blog de Jean Le Rocher",
+    description: "Portfolio de Jean Le Rocher",
     authors: { name: "Jean Le Rocher" },
     keywords:
         "Jean Le Rocher, Portfolio, Blog, NextJS, React, TypeScript, TailwindCSS, Prisma, PostgreSQL, NodeJS, ExpressJS",
@@ -29,7 +30,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="fr">
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
@@ -42,6 +43,7 @@ export default function RootLayout({
                     <Header />
                     <main>{children}</main>
                 </ThemeProvider>
+                <Analytics />
             </body>
         </html>
     );
