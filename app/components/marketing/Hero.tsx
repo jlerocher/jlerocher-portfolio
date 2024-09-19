@@ -13,7 +13,7 @@ const Hero = () => {
                     <h1 className="font-serif uppercase text-5xl sm:text-6xl font-black flex flex-col leading-none gap-5">
                         Jean Le Rocher
                         <span className="text-3xl sm:text-5xl">
-                            Développeur Web Fullstack
+                            Développeur Web Fullstack & DevOps
                         </span>
                     </h1>
                     <p className="text-sm w-11/12 sm:text-base">
@@ -34,7 +34,7 @@ const Hero = () => {
                         </Button>
                         <Button variant="outline" size="default">
                             <Link
-                                href="/projets"
+                                href="#projects"
                                 className="flex items-center gap-2"
                             >
                                 <CodeIcon className="w-5 h-5" />
