@@ -12,5 +12,5 @@
         "prettier-plugin-tailwindcss",
         "prettier-plugin-organize-imports"
     ],
-    "tailwindConfig": "tailwind.config.js"
+    "tailwindConfig": "tailwind.config.ts"
 }
