@@ -35,7 +35,7 @@ const Header = () => {
                     </h2>
                 </Link>
 
-                <nav className="hidden sm:flex sm:items-center gap-6 w-full sm:justify-center font-thin text-base">
+                <nav className="hidden sm:flex sm:items-center w-full sm:justify-center font-thin text-base">
                     {navItems.map((item, index) => (
                         <Link
                             key={index}
