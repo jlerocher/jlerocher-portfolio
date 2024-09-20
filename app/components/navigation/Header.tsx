@@ -40,7 +40,7 @@ export const navItems: navItemType[] = [
 ];
 const Header = () => {
     return (
-        <header className="text-card-foreground bg-card py-4 border-b border-border px-2 flex items-center justify-between sm:justify-between">
+        <header className="fixed z-50 top-0 left-0 w-full text-card-foreground bg-card py-4 border-b border-border px-2 flex items-center justify-between sm:justify-between">
             <div className="flex items-center gap-6 justify-center">
                 <Link href="/" className="flex font-medium items-center">
                     <span className="text-4xl">👋</span>
