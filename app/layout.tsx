@@ -42,7 +42,9 @@ export default function RootLayout({
                     disableTransitionOnChange
                 >
                     <Header />
-                    <main className="max-w-screen-lg mx-auto">{children}</main>
+                    <main className="sm:px-2 max-w-screen-lg mx-auto px-2 sm:p-0">
+                        {children}
+                    </main>
                     <Footer />
                 </ThemeProvider>
                 <Analytics />

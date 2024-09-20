@@ -32,30 +32,30 @@ const skills = [
 ];
 const Skills = () => {
     return (
-        <section id="skills" className="p-5 mt-10">
+        <section id="skills" className="py-5 mt-10">
             <h2 className=" font-serif text-3xl font-medium">
-                Quelques Technos
-                <hr className="border-border mt-2" />
-                <div className="grid grid-cols-3 gap-3 p-2 w-full sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
-                    {skills.map((skill) => (
-                        <div
-                            key={skill.name}
-                            className="rounded-lg bg-card shadow-md border"
-                        >
-                            <Image
-                                src={skill.image}
-                                alt={skill.name}
-                                width={150}
-                                height={150}
-                                className="object-cover"
-                            />
-                            <p className="text-sm text-center font-bold p-1">
-                                {skill.name}
-                            </p>
-                        </div>
-                    ))}
-                </div>
+                Quelques Technos que je maitrise
             </h2>
+            <hr className="border-border my-2" />
+            <div className="grid grid-cols-3 gap-3 p-2 w-full sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
+                {skills.map((skill) => (
+                    <div
+                        key={skill.name}
+                        className="rounded-lg bg-card shadow-md border"
+                    >
+                        <Image
+                            src={skill.image}
+                            alt={skill.name}
+                            width={150}
+                            height={150}
+                            className="object-cover"
+                        />
+                        <p className="text-sm text-center font-bold p-1">
+                            {skill.name}
+                        </p>
+                    </div>
+                ))}
+            </div>
         </section>
     );
 };

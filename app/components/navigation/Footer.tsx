@@ -1,8 +1,9 @@
 import { navItems } from "@/app/components/navigation/Header";
 import { Github, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
+import { BiLogoWhatsapp } from "react-icons/bi";
 
-const socials = [
+export const socials = [
     {
         name: "Mon compte Github",
         href: "https://github.com/jlerocher",
@@ -24,17 +25,24 @@ const socials = [
             <Twitter className="size-5 text-base font-bold text-blue-500 fill-blue-500" />
         ),
     },
+    {
+        name: "Mon compte whatsapp",
+        href: "https://https://wa.me/+242068814229",
+        icon: (
+            <BiLogoWhatsapp className="size-5 text-base font-bold text-green-500" />
+        ),
+    },
 ];
 
 const Footer = () => {
     return (
         <footer className="bg-card py-4 px-4 border-t border-border">
-            <div className=" flex flex-row items-center justify-between">
+            <div className=" flex flex-row place-items-start sm:place-items-center justify-between">
                 <h2 className="text-center font-bold block text-2xl font-serif min-w-40">
                     Jean Le Rocher
                 </h2>
 
-                <nav className="flex items-center gap-3 sm:gap-8 justify-center">
+                <nav className="grid sm:flex sm:flex-row gap-3 sm:gap-8">
                     {navItems.map((item) => (
                         <Link
                             key={item.name}

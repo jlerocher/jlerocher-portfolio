@@ -7,21 +7,35 @@ import {
     DropdownMenuTrigger,
 } from "@/app/components/shadcn-ui/dropdown-menu";
 import { navItemType } from "@/types";
-import { CodeIcon, HamburgerMenuIcon, ReaderIcon } from "@radix-ui/react-icons";
+import {
+    CodeIcon,
+    EnvelopeClosedIcon,
+    HamburgerMenuIcon,
+    QuestionMarkCircledIcon,
+    ReaderIcon,
+} from "@radix-ui/react-icons";
 import Link from "next/link";
 import { ModeToggle } from "../other/ModeToggle";
 import ThemeSwitcher from "../other/ThemeSwitcher";
+import { Button } from "../shadcn-ui/button";
 
 export const navItems: navItemType[] = [
     {
         name: "Projets",
-        href: "/projects",
+        href: "#projects",
         icon: <CodeIcon className="size-5 text-base font-bold" />,
     },
     {
         name: "Blog",
         href: "https://blog-de-rocher.vercel.app/",
         icon: <ReaderIcon className="size-5 text-base font-bold" />,
+    },
+    {
+        name: "A propos",
+        href: "/about",
+        icon: (
+            <QuestionMarkCircledIcon className="size-5 text-base font-bold" />
+        ),
     },
 ];
 const Header = () => {
@@ -49,7 +63,17 @@ const Header = () => {
                 </nav>
             </div>
 
-            <ModeToggle />
+            <div className="flex items-center gap-2 sm:gap-8 justify-center">
+                <Button
+                    variant="default"
+                    className="hidden lg:flex lg:flex-row lg:items-center lg:gap-2 lg:justify-center lg:font-bold"
+                >
+                    <EnvelopeClosedIcon className="size-5 text-base font-bold" />
+                    <Link href="#contacts">Contactez-moi</Link>
+                </Button>
+
+                <ModeToggle />
+            </div>
 
             <div className="sm:hidden">
                 <DropdownMenu>
