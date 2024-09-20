@@ -18,9 +18,9 @@ const Hero = () => {
                     </h1>
                     <p className="text-sm w-11/12 sm:text-base">
                         Propulsez votre présence en ligne avec des solutions web
-                        fullstack innovantes. Je m'engage à fournir des
-                        solutions web 100% adaptées à vos besoins, en respectant
-                        les délais et les bonnes pratiques de développement web.
+                        innovantes. Je m'engage à fournir des solutions web 100%
+                        adaptées à vos besoins, en respectant les délais et les
+                        bonnes pratiques de développement web.
                     </p>
                     <div className="flex items-center w-full gap-4 mt-8">
                         <Button variant="default" size="default">
